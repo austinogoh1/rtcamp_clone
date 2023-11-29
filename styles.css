@@ -9,7 +9,7 @@
 
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* Generic Styles */
@@ -39,7 +39,7 @@ html {
   margin-left: 15px;
   text-decoration: none;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /* Banner Styles */
@@ -55,11 +55,11 @@ html {
   height: 100%;
 }
 .banner h1 {
-  font-size: 50px;
+  font-size: 2.7rem;
 }
 .banner p {
   margin: 30px 0;
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 
 .banner .links {
@@ -79,6 +79,7 @@ html {
   color: black;
   background-color: white;
   margin-left: 10px;
+  margin-top: 0;
 }
 
 .banner .clients {
@@ -87,6 +88,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   height: 100px;
 }
 .banner img {
@@ -118,11 +120,12 @@ img {
 }
 
 .main-left h2 {
-  font-size: 30px;
+  font-size: 1.8rem;
 }
 .main-left p {
-  font-size: 15px;
+  font-size: .9rem;
   line-height: 1.8;
+  padding: 20px 0;
 }
 
 .main-left img {
@@ -156,7 +159,7 @@ img {
 
 .main-rigth q {
   margin: 20px 0;
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: inherit;
   line-height: 1.5;
 }
@@ -180,14 +183,14 @@ img {
 }
 
 .main-rigth h6 {
-  font-size: 15px;
+  font-size: .9rem;
   margin: 10px 0;
   display: flex;
   flex-direction: column;
 }
 
 .author p {
-  font-size: 15px;
+  font-size: .9rem;
 }
 
 /* whats new  */
@@ -205,11 +208,11 @@ img {
 }
 
 .whats-new-right {
-  flex: 2;  
+  flex: 2;
 }
 
 .whats-new-right h3 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .whats-new-right p {
@@ -232,7 +235,7 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .imgs img {
@@ -241,18 +244,17 @@ img {
 }
 
 /* case studies  */
-
+.case-studies {
+  margin: 50px auto;
+}
 .case-studies h3 {
-  font-size: 30px;
-  margin: 20px;
+  font-size: 2rem;
+  margin: 20px 0;
 }
 
 .case-studies p {
-  margin: 30px 0;
-}
-
-.case-studies img {
-  width: 100%;
+  margin: 20px 0;
+  font-size: 1rem;
 }
 
 .case-studies-data {
@@ -260,5 +262,144 @@ img {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   margin-bottom: 50px;
+  padding: 20px 0;
 }
 
+.case-studies-data img {
+  width: 100%;
+}
+.case-studies-details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.case-studies-details h4 {
+  font-size: 1.2rem;
+}
+
+.case-studies-details h4:hover {
+  text-decoration: underline;
+}
+
+.case-studies-details p {
+  line-height: 1.8;
+}
+
+.case-studies.left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.case-studies.left img {
+  width: 100%;
+}
+
+.case-studies-details h5 {
+  font-size: 1.2rem;
+}
+
+.case-studies-details h5:hover {
+  text-decoration: underline;
+} 
+
+.case-studies-details p {
+  line-height: 1.8;
+}
+
+.case-studies-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.case-studies-left img {
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 13px;
+  }
+  .header {
+    height: 80px;
+  }
+  .banner h1 {
+    font-size: 2rem;
+  }
+  .banner a {
+    width: 100%;
+    display: block;
+  }
+  .banner p {
+    margin: 0;
+    font-size: .9rem;
+  }
+  .banner a:nth-child(2) {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .banner .clients {
+    justify-content: flex-start;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  html {
+    font-size: 14px;
+  }
+  .banner .clients {
+    justify-content: flex-start;
+  }
+  .banner img {
+    max-width: 100px;
+    margin-right: 20px;
+  }
+  .whats-new .container {
+    flex-direction: column;
+  }
+  .imgs {
+    justify-content: center;
+  }
+  
+  .imgs img {
+    max-width: 50%;
+  }
+  .case-studies-data {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  html {
+    font-size: 16px;
+  }
+  .header-right {
+    display: none;
+  }
+  .banner {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .main {
+    flex-direction: column;
+  }
+  .main-left {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .main-left img {
+    width: 100%;
+  }
+}

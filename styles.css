@@ -54,9 +54,11 @@ html {
   justify-content: center;
   height: 100%;
 }
+
 .banner h1 {
   font-size: 2.7rem;
 }
+
 .banner p {
   margin: 30px 0;
   font-size: 1.1rem;
@@ -91,6 +93,7 @@ html {
   flex-wrap: wrap;
   height: 100px;
 }
+
 .banner img {
   width: 100%;
   max-width: 120px;
@@ -122,6 +125,7 @@ img {
 .main-left h2 {
   font-size: 1.8rem;
 }
+
 .main-left p {
   font-size: 0.9rem;
   line-height: 1.8;
@@ -247,6 +251,7 @@ img {
 .case-studies {
   margin: 50px auto;
 }
+
 .case-studies h3 {
   font-size: 2rem;
   margin: 20px 0;
@@ -268,6 +273,7 @@ img {
 .case-studies-data img {
   width: 100%;
 }
+
 .case-studies-details {
   height: 100%;
   display: flex;
@@ -275,6 +281,7 @@ img {
   justify-content: space-between;
   padding: 5px 0;
 }
+
 .case-studies-details h4 {
   font-size: 1.2rem;
 }
@@ -290,7 +297,6 @@ img {
 .case-studies-details a {
   font-size: 1.2rem;
   color: #2565c6;
-  
 }
 
 .case-studies.left {
@@ -329,37 +335,145 @@ img {
   width: 100%;
 }
 
-.case a {
-  padding: 15px 20px;
-  background-color: #333;
-  color: #e8e5e5;
-  text-decoration: none;
+.case-link {
+  width: 70%;
+  padding: 15px 15px;
+  text-align: center;
+  border: 3px solid black;
+  margin-top: 30px;
   font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.footer-styles {
   width: 100%;
+  background-color: #5e585814;
+  padding: 70px 0 80px;
+}
+
+.footer-styles .container {
+  display: grid;
+  grid-template-columns: 30% 20% 20% 30%;
+  grid-gap: 15px;
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+
+.footer-main p {
+  line-height: 1.8;
+}
+
+.footer-main a {
+  text-decoration: none;
+  color: #2565c6;
+}
+
+.footer-main a:hover {
+  text-decoration: underline;
+  color: #2565c6;
+}
+
+.footer-main img {
+  width: 60%;
+}
+
+.footer-camp {
+  font-size: 0.7rem;
+  margin-top: 50px;
+}
+
+.footer-company {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+  margin-left: 30px;
+}
+
+.footer-company a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.footer-company a:hover {
+  text-decoration: underline;
+  color: #2565c6;
+}
+
+.footer-resources {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  grid-gap: 30px;
+}
+
+.footer-resources a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.footer-resources a:hover {
+  text-decoration: underline;
+  color: #2565c6;
+}
+
+.footer-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-email p {
+  padding: 10px;
+  border: 3px solid #333;
+  margin: 30px 0;
+}
+
+.footer-icon {
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.footer-span {
+  margin-top: 80px;
+  font-size: 0.7rem;
 }
 
 @media screen and (max-width: 450px) {
   html {
     font-size: 13px;
   }
+
+
   .header {
     height: 80px;
   }
+
   .banner h1 {
     font-size: 2rem;
   }
+
   .banner a {
     width: 100%;
     display: block;
   }
+
   .banner p {
     margin: 0;
     font-size: 0.9rem;
   }
+
   .banner a:nth-child(2) {
     margin-left: 0;
     margin-top: 10px;
   }
+
   .banner .clients {
     justify-content: flex-start;
     height: auto;
@@ -370,16 +484,20 @@ img {
   html {
     font-size: 14px;
   }
+
   .banner .clients {
     justify-content: flex-start;
   }
+
   .banner img {
     max-width: 100px;
     margin-right: 20px;
   }
+
   .whats-new .container {
     flex-direction: column;
   }
+
   .imgs {
     justify-content: center;
   }
@@ -387,8 +505,15 @@ img {
   .imgs img {
     max-width: 50%;
   }
+
   .case-studies-data {
     grid-template-columns: 1fr;
+  }
+
+  .footer-styles .container {
+    
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
   }
 }
 
@@ -396,9 +521,11 @@ img {
   html {
     font-size: 16px;
   }
+
   .header-right {
     display: none;
   }
+
   .banner {
     height: 100vh;
   }
@@ -408,11 +535,21 @@ img {
   .main {
     flex-direction: column;
   }
+
   .main-left {
     margin-right: 0;
     margin-bottom: 20px;
   }
+
   .main-left img {
     width: 100%;
   }
 }
+@media screen and (max-width: 330px) {
+  .footer-styles .container {
+  
+      
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  }
